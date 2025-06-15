@@ -3,91 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to My Portfolio</title>
+    <title>Welcome</title>
     <style>
-        /* Simple CSS for styling */
+        /* Styling for the welcome screen */
         body {
+            margin: 0;
+            background-color: black; /* Full black background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Full viewport height */
+            color: #a52a2a; /* Brown color for the text */
             font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            background-color: #f0f4f8;
-            color: #333;
         }
-        header {
-            background: #007acc;
-            color: #fff;
-            padding: 1.5em 0;
+        h1 {
+            font-size: 5rem; /* Make the text big */
+            cursor: pointer; /* Pointer cursor to indicate it's clickable */
+            text-shadow: 2px 2px 4px #000; /* Slight shadow for depth */
+            transition: transform 0.3s, color 0.3s; /* Add hover animation */
         }
-        header h1 {
-            margin: 0;
-        }
-        nav {
-            margin: 2em 0;
-        }
-        nav a {
-            text-decoration: none;
-            color: #007acc;
-            font-weight: bold;
-            margin: 0 15px;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        section {
-            margin: 20px auto;
-            padding: 20px;
-            max-width: 700px;
-        }
-        footer {
-            margin-top: 20px;
-            padding: 10px;
-            background: #222;
-            color: #fff;
+        h1:hover {
+            transform: scale(1.1); /* Slight enlargement on hover */
+            color: #d2691e; /* Light brown hover effect */
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to Patrick Bobo's Portfolio</h1>
-        <p>From Social Work to Computer Science: My Coding Journey</p>
-    </header>
-    <nav>
-        <a href="#about">About Me</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! My name is Patrick Bobo. I am transitioning from the world of social work into the exciting realm of computer science. 
-           I’m passionate about learning new technologies and creating projects that make a difference.</p>
-        <p>You’ll find my coding journey, projects, and more on this site as I grow as a developer. Stay tuned for updates!</p>
-    </section>
-    <section id="projects">
-        <h2>My Projects</h2>
-        <ul>
-            <li>
-                <a href="https://github.com/PatrickBobo-cs/cool-project-1" target="_blank">Cool Project #1</a> - A brief description of your first project.
-            </li>
-            <li>
-                <a href="https://github.com/PatrickBobo-cs/cool-project-2" target="_blank">Cool Project #2</a> - Another project for display.
-            </li>
-            <li>
-                More projects coming soon!
-            </li>
-        </ul>
-    </section>
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Feel free to get in touch with me through the following channels:</p>
-        <p>
-            <strong>Email:</strong> <a href="mailto:patrickbobo@gmail.com">patrickbobo@gmail.com</a><br>
-            <strong>GitHub:</strong> <a href="https://github.com/PatrickBobo-cs" target="_blank">@PatrickBobo-cs</a>
-        </p>
-    </section>
-    <footer>
-        <p>&copy; 2023 Patrick Bobo. All Rights Reserved.</p>
-    </footer>
+    <h1 onclick="redirectToLanding()">WELCOME</h1>
+
+    <script>
+        // Function to redirect user to the landing page
+        function redirectToLanding() {
+            window.location.href = "landing.html"; // Replace with your landing page URL
+        }
+    </script>
 </body>
 </html>
