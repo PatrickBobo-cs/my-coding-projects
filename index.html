@@ -13,23 +13,29 @@
             justify-content: center;
             align-items: center;
             height: 100vh; /* Full viewport height */
-            color: #a52a2a; /* Brown color for the text */
             font-family: Arial, sans-serif;
         }
-        h1 {
-            font-size: 5rem; /* Make the text big */
-            cursor: pointer; /* Pointer cursor to indicate it's clickable */
-            text-shadow: 2px 2px 4px #000; /* Slight shadow for depth */
-            transition: transform 0.3s, color 0.3s; /* Add hover animation */
+        button {
+            background: none;
+            border: 2px solid #a52a2a; /* Brown border */
+            color: #a52a2a; /* Brown text */
+            font-size: 3rem; /* Large font size */
+            padding: 20px 50px; /* Padding for the button */
+            cursor: pointer;
+            transition: all 0.3s ease; /* Smooth transitions */
+            text-transform: uppercase;
         }
-        h1:hover {
-            transform: scale(1.1); /* Slight enlargement on hover */
-            color: #d2691e; /* Light brown hover effect */
+        button:hover {
+            background-color: #a52a2a; /* Fill with brown on hover */
+            color: #fff; /* White text on hover */
+        }
+        button:focus {
+            outline: none; /* Remove focus outline for aesthetics */
         }
     </style>
 </head>
 <body>
-    <h1 onclick="redirectToLanding()">WELCOME</h1>
+    <button onclick="redirectToLanding()">WELCOME</button>
 
     <script>
         // Function to redirect user to the landing page
